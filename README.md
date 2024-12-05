@@ -28,7 +28,7 @@ Market işletmelerine özel olarak geliştirilen bu otomasyon sistemi, iş süre
 
 ## **Kurulum ve Kullanım**  
 Projeyi kullanmaya başlamak için:  
-1. **[Kurulum Kılavuzu](#)** bağlantısını inceleyin.  
+1. **[Kurulum Kılavuzu](https://github.com/sait-tskra/Taskara-Yazilim/blob/main/Kurulum%20K%C4%B1lavuzu)** bağlantısını inceleyin.  
 2. Sistem gereksinimlerini kontrol ederek yazılımı yükleyin.  
 3. Lisans anahtarınızı girerek tüm özelliklerden faydalanmaya başlayın.  
 
