@@ -1,6 +1,5 @@
-# Versiyon: 1.0.0.0 abc
 # **Barkodlu Market Otomasyonu**  
-**Versiyon: 1.0.0.0**  
+**Versiyon: 1.0.0.0**  **En Güncel Versiyon**
 
 Market işletmelerine özel olarak geliştirilen bu otomasyon sistemi, iş süreçlerini hızlandıran ve kolaylaştıran yenilikçi özelliklerle donatılmıştır. **Stok takibi**, **satış işlemleri**, **veresiye yönetimi** gibi işlevleri tek bir platformda sunar.  
 
