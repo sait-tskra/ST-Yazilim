@@ -1,0 +1,63 @@
+# **Kurulum Kılavuzu**  
+
+Bu kılavuz, Barkodlu Market Otomasyonu sisteminin kurulum adımlarını açıklar. Lütfen adımları sırayla takip ederek sistemi başarıyla kurabilirsiniz.  
+
+## **Sistem Gereksinimleri**  
+Kuruluma başlamadan önce aşağıdaki sistem gereksinimlerini karşılayıp karşılamadığınızı kontrol edin:  
+- **İşletim Sistemi**: Windows 10 veya üzeri.  
+- **.NET Framework**: 4.7.2 veya üzeri.  
+- **Veritabanı**: Microsoft SQL Server (2016 veya üzeri).  
+- **RAM**: Minimum 4 GB (8 GB önerilir).  
+- **Depolama Alanı**: En az 500 MB boş disk alanı.  
+
+## **Kurulum Adımları**  
+
+### 1. **Gerekli Dosyaların İndirilmesi**  
+- Bu projeye ait dosyaları indirmek için **[GitHub Repository](#)** sayfasından "Code" düğmesine tıklayın ve dosyaları ZIP olarak indirin veya Git kullanarak klonlayın:  
+  ```bash
+  git clone https://github.com/username/market-automation.git
+  ```  
+
+### 2. **Veritabanı Ayarları**  
+- SQL Server üzerinde yeni bir veritabanı oluşturun.  
+- Proje klasöründe yer alan `DatabaseScript.sql` dosyasını kullanarak veritabanı tablolarını ve örnek verileri yükleyin:  
+  1. SQL Server Management Studio'yu açın.  
+  2. `DatabaseScript.sql` dosyasını içe aktarın ve çalıştırın.  
+
+### 3. **Uygulamanın Ayarlanması**  
+- Proje dosyalarında yer alan `appsettings.json` dosyasını açın ve aşağıdaki bilgileri kendi sisteminize göre güncelleyin:  
+  ```json
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=YOUR_DATABASE_NAME;User Id=YOUR_USERNAME;Password=YOUR_PASSWORD;"
+  }
+  ```  
+
+### 4. **Uygulamanın Derlenmesi ve Çalıştırılması**  
+- Projeyi bir IDE (örneğin, **Visual Studio 2022**) ile açın.  
+- Gerekli NuGet paketlerini yüklemek için `Tools > NuGet Package Manager > Manage NuGet Packages for Solution` bölümünden eksik paketleri yükleyin.  
+- Projeyi çalıştırmak için **F5** tuşuna basın veya "Run" düğmesine tıklayın.  
+
+### 5. **Lisans Anahtarını Aktive Etme**  
+- Uygulama ilk açıldığında lisans anahtarınızı girmenizi isteyen bir ekran ile karşılaşacaksınız. Size sağlanan anahtarı girerek uygulamayı aktive edin.  
+
+## **Sık Sorulan Sorunlar ve Çözümleri**  
+
+### **Soru**: SQL Server bağlantısı başarısız oluyor.  
+**Çözüm**:  
+- `appsettings.json` dosyasındaki bağlantı dizesinin doğru olduğundan emin olun.  
+- SQL Server hizmetinin çalıştığını ve uzak bağlantılara izin verildiğini kontrol edin.  
+
+### **Soru**: Uygulama açılırken hata alıyorum.  
+**Çözüm**:  
+- Gerekli .NET Framework sürümünün yüklü olduğundan emin olun.  
+- Eksik NuGet paketlerini kontrol edin ve yükleyin.  
+
+### **Soru**: Lisans anahtarı kabul edilmiyor.  
+**Çözüm**:  
+- Sağlanan lisans anahtarını doğru yazdığınızdan emin olun.  
+- Sorun devam ederse destek ekibine ulaşın.  
+
+## **Destek**  
+Kurulum sırasında herhangi bir sorunla karşılaşırsanız, lütfen bizimle iletişime geçmekten çekinmeyin:  
+- **E-posta**: saittaskara629@gmail.com  
+
